@@ -1,199 +1,104 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>SHANZY MUSİC ENTERTAINMENT-2024</title>
   <link rel="stylesheet" href="./style.css">
-
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <!DOCTYPE html>
-
 <html lang="tr">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>SHANZY MUSIC ENTERTAINMENT</title>
-
     <link rel="stylesheet" href="styles.css">
-
 </head>
-
 <body>
-
     <header>
-
         <div class="header-background">
-
             <div class="logo">
-
                 <h1>SHANZY MUSIC ENTERTAINMENT</h1>
-
             </div>
-
             <nav>
-
                 <ul>
-
                     <li><a href="#about">Hakkımızda</a></li>
-
                     <li><a href="#services">Hizmetlerimiz</a></li>
-
-                    
-
-                    
-
                 </ul>
-
             </nav>
-
         </div>
-
     </header>
-
     <main>
-
         <section id="hero">
-
-            <h2>MÜZİK DAĞITIMINDA 
-           <h2>YENİ BİR DÖNEM</h2>
-
+            <h2>MÜZİK DAĞITIMINDA YENİ BİR DÖNEM</h2>
             <p>Sanatçılar İçin En İyi Dağıtım Hizmetleri Burada!</p>
-
             <a class="cta-button" href="#application">BAŞVUR</a>
-
         </section>
-
         <section id="about" class="special-section">
-
             <h2>HAKKIMIZDA;</h2>
-
             <p>Müzik Sanatçılarının Eserlerini Dijital Platformlara Ulaştırmalarına Yardımcı Oluyoruz.</p>
-
         </section>
-
         <section id="services" class="special-section">
-
             <h2>Hizmetlerimiz</h2>
-
             <p>Müzik Dağıtımı, Pazarlama ve Daha Fazlası İçin Bize Ulaşın!</p>
-
         </section>
-
         <section id="how-it-works" class="special-section">
-
             <h2>Nasıl Çalışır?</h2>
-
             <p>Müzik Dağıtım Sürecimiz Şu Adımlarla İşler:</p>
-
             <ul>
-
                 <li>
-
                     <strong>Adım 1:</strong> Sanatçılar, eserlerini ve gerekli bilgileri çevrimiçi platformumuz aracılığıyla bize iletir.
-
                     <p>Her başvuruda, sanatçıların eserleri ile ilgili detaylı bilgiler, sanatçı biyografisi ve sosyal medya bağlantıları da dahil edilmelidir.</p>
-
                 </li>
-
                 <li>
-
                     <strong>Adım 2:</strong> Eserler, dijital platformlar için hazırlanır.
-
                     <p>Her eser, gerekli tüm lisanslar ve dağıtım haklarıyla birlikte kontrol edilerek, dijital platformlara yüklenmeye hazır hale getirilir.</p>
-
                 </li>
-
                 <li>
-
                     <strong>Adım 3:</strong> Sanatçının müziği, Spotify, Apple Music gibi popüler dijital müzik platformlarında yayınlanır.
-
                     <p>Dağıtım süreci sırasında, eserlerin performansını takip edebilmeniz için gerekli raporlar ve analizler sağlanır.</p>
-
                 </li>
-
                 <li>
-
                     <strong>Adım 4:</strong> Sanatçılar, müziklerinin performansını takip edebilir.
-
                     <p>Sanatçılar, gelir raporlarına erişim sağlayarak müziklerinin nasıl bir performans sergilediğini görebilirler.</p>
-
                 </li>
-
             </ul>
-
-           
-
         </section>
-
         <section id="application">
-
             <h2>Başvuru Formu</h2>
-
             <p class="application-description">Siz de müzik kariyerinizi bir adım ileriye taşımak istiyorsanız, aşağıdaki formu doldurun. Bu form, kariyerinize önemli bir adım atmanızı sağlayacak!</p>
-
             <div class="application-container">
-
-                <form id="application-form">
-
-                  <label for="name">AD SOYAD:</label>
-
+                <form id="application-form" action="https://formspree.io/f/myzyewpb" method="POST">
+                    <label for="name">AD SOYAD:</label>
                     <input type="text" id="name" name="name" placeholder="Adınızı ve Soyadınızı girin" required> 
 
-              <label for="email">E-MAİL:</label>
-
+                    <label for="email">E-MAİL:</label>
                     <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin" required>
 
                     <label for="spotify">SPOTİFY ARTİST LİNK:</label>
-
                     <input type="url" id="spotify" name="spotify" placeholder="Spotify sanatçı linkinizi girin" required>
 
-         
-                  
-                  
-                  <label for="social-media">INSTAGRAM HESABINIZIN LİNKİ:</label>
-
+                    <label for="social-media">INSTAGRAM HESABINIZIN LİNKİ:</label>
                     <input type="url" id="social-media" name="social-media" placeholder="Sosyal medya linkinizi girin" required>
 
-           <h2>         <button type="submit">BAŞVUR</button>
-
+                    <button type="submit">BAŞVUR</button>
                 </form>
-
                 <div id="confirmation-message" style="display:none;">
-
                     Başvurunuz alınmıştır. Teşekkür ederiz!
-
                 </div>
-
             </div>
-
         </section>
-
     </main>
-
     <footer>
-
         <div class="footer-content">
-
-      <p>© 2024 SHANZY MUSIC ENTERTAINMENT</p>
-
-      <p class="footer-subtext">Tüm hakları saklıdır.</p>
-
+            <p>© 2024 SHANZY MUSIC ENTERTAINMENT</p>
+            <p class="footer-subtext">Tüm hakları saklıdır.</p>
         </div>
-
     </footer>
-
     <script src="script.js"></script>
-
 </body>
-
 </html>
 <!-- partial -->
-  
 </body>
 </html>
