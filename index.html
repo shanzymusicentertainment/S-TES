@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
 
 <html lang="tr">
 
@@ -8,9 +18,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Rhythm Distribution - Başvuru</title>
+    <title>SHANZY MUSIC ENTERTAINMENT</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -18,206 +28,163 @@
 
     <header>
 
-        <h1>MÜZİĞİNİZİ SINIRSIZ OLARAK DAĞITIN !</h1>
+        <div class="header-background">
 
-        <button class="info-button" onclick="scrollToHowItWorks()">NASIL ÇALIŞIR?</button>
+            <div class="logo">
+
+                <h1>SHANZY MUSIC ENTERTAINMENT</h1>
+
+            </div>
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="#about">Hakkımızda</a></li>
+
+                    <li><a href="#services">Hizmetlerimiz</a></li>
+
+                    
+
+                    
+
+                </ul>
+
+            </nav>
+
+        </div>
 
     </header>
 
-    
+    <main>
 
-    <section class="how-it-works" id="howItWorksSection">
+        <section id="hero">
 
-        <h2>Süreç Kolay, Güvenli ve Hızlı.</h2>
+            <h2>MÜZİK DAĞITIMINDA 
+           <h2>YENİ BİR DÖNEM</h2>
 
-        <div class="steps">
+            <p>Sanatçılar İçin En İyi Dağıtım Hizmetleri Burada!</p>
 
-            <div class="step">
+            <a class="cta-button" href="#application">BAŞVUR</a>
 
-                <span>1</span>
-                
-                <p>Gerekli Bilgilerle Kaydolarak Bir Hesap Oluşturun.</p>
+        </section>
+
+        <section id="about" class="special-section">
+
+            <h2>HAKKIMIZDA;</h2>
+
+            <p>Müzik Sanatçılarının Eserlerini Dijital Platformlara Ulaştırmalarına Yardımcı Oluyoruz.</p>
+
+        </section>
+
+        <section id="services" class="special-section">
+
+            <h2>Hizmetlerimiz</h2>
+
+            <p>Müzik Dağıtımı, Pazarlama ve Daha Fazlası İçin Bize Ulaşın!</p>
+
+        </section>
+
+        <section id="how-it-works" class="special-section">
+
+            <h2>Nasıl Çalışır?</h2>
+
+            <p>Müzik Dağıtım Sürecimiz Şu Adımlarla İşler:</p>
+
+            <ul>
+
+                <li>
+
+                    <strong>Adım 1:</strong> Sanatçılar, eserlerini ve gerekli bilgileri çevrimiçi platformumuz aracılığıyla bize iletir.
+
+                    <p>Her başvuruda, sanatçıların eserleri ile ilgili detaylı bilgiler, sanatçı biyografisi ve sosyal medya bağlantıları da dahil edilmelidir.</p>
+
+                </li>
+
+                <li>
+
+                    <strong>Adım 2:</strong> Eserler, dijital platformlar için hazırlanır.
+
+                    <p>Her eser, gerekli tüm lisanslar ve dağıtım haklarıyla birlikte kontrol edilerek, dijital platformlara yüklenmeye hazır hale getirilir.</p>
+
+                </li>
+
+                <li>
+
+                    <strong>Adım 3:</strong> Sanatçının müziği, Spotify, Apple Music gibi popüler dijital müzik platformlarında yayınlanır.
+
+                    <p>Dağıtım süreci sırasında, eserlerin performansını takip edebilmeniz için gerekli raporlar ve analizler sağlanır.</p>
+
+                </li>
+
+                <li>
+
+                    <strong>Adım 4:</strong> Sanatçılar, müziklerinin performansını takip edebilir.
+
+                    <p>Sanatçılar, gelir raporlarına erişim sağlayarak müziklerinin nasıl bir performans sergilediğini görebilirler.</p>
+
+                </li>
+
+            </ul>
+
+           
+
+        </section>
+
+        <section id="application">
+
+            <h2>Başvuru Formu</h2>
+
+            <p class="application-description">Siz de müzik kariyerinizi bir adım ileriye taşımak istiyorsanız, aşağıdaki formu doldurun. Bu form, kariyerinize önemli bir adım atmanızı sağlayacak!</p>
+
+            <div class="application-container">
+
+                <form id="application-form">
+
+                  <label for="name">AD SOYAD:</label>
+
+                    <input type="text" id="name" name="name" placeholder="Adınızı ve Soyadınızı girin" required> 
+
+              <label for="email">E-MAİL:</label>
+
+                    <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin" required>
+
+                    <label for="spotify">SPOTİFY ARTİST LİNK:</label>
+
+                    <input type="url" id="spotify" name="spotify" placeholder="Spotify sanatçı linkinizi girin" required>
+
+         
+                  
+                  
+                  <label for="social-media">INSTAGRAM HESABINIZIN LİNKİ:</label>
+
+                    <input type="url" id="social-media" name="social-media" placeholder="Sosyal medya linkinizi girin" required>
+
+           <h2>         <button type="submit">BAŞVUR</button>
+
+                </form>
+
+                <div id="confirmation-message" style="display:none;">
+
+                    Başvurunuz alınmıştır. Teşekkür ederiz!
+
+                </div>
 
             </div>
 
-            <div class="step">
+        </section>
 
-                <span>2</span>
-
-                <p>Single'lar veya Albümler Oluşturarak Müziğinizi Yükleyin.</p>
-
-            </div>
-
-            <div class="step">
-
-                <span>3</span>
-
-                <p>Kaldırılmış Şarkılarını Tekrardan Yayınla, Sıkıntısız Dağıt, Kısıtlama Olmadan İçeriğini Paylaş!</p>
-
-            </div>
-
-            <div class="step">
-
-                <span>4</span>
-
-                <p>Telif Ücretlerinizi Detaylı Rapor e Ödemelerle Tahsil Edin.</p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="application-form">
-        <h2>Sanatçı Başvuru Formu</h2>
-
-        <p>Aşağıdaki Formu Doldurarak Rhythm Distribution'a Başvurunuzu Gönderin. 
-      
-    <p>  <p>Başvurunuz Değerlendirildikten Sonra Geri Dönüş Yapılacaktır.</p>
-
-        <form id="applicationForm">
-        <button class="info-button" onclick="scrollToHowItWorks()">NASIL ÇALIŞIR?</button>
-
-    </header>
-
-    
-
-    <section class="how-it-works" id="howItWorksSection">
-
-        <h2>Süreç Kolay, Güvenli ve Hızlı.</h2>
-
-        <div class="steps">
-
-            <div class="step">
-
-                <span>1</span>
-
-                <p>Gerekli Bilgilerle Kaydolarak Bir Hesap Oluşturun.</p>
-
-            </div>
-
-            <div class="step">
-
-                <span>2</span>
-
-                <p>Single'lar veya Albümler Oluşturarak Müziğinizi Yükleyin.</p>
-
-            </div><div class="step">
-
-                <span>3</span>
-
-                <p>Kaldırılmış Şarkılarını Tekrardan Yayınla, Sıkıntısız Dağıt, Kısıtlama Olmadan İçeriğini Paylaş!</p>
-
-            </div>
-
-            <div class="step">
-
-                <span>4</span>
-
-                <p>Telif Ücretlerinizi Detaylı Rapor e Ödemelerle Tahsil Edin.</p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="application-form">
-
-        <h2>Sanatçı Başvuru Formu</h2>
-
-        <p>Aşağıdaki Formu Doldurarak Rhythm Distribution'a Başvurunuzu Gönderin. 
-      
-    <p>  <p>Başvurunuz Değerlendirildikten Sonra Geri Dönüş Yapılacaktır.</p>
-
-        <form id="applicationForm">
-         <label for="name">AD SOYAD:</label>
-
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">E-Posta:</label>
-
-            <label for="name">AD SOYAD:</label>
-
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">E-Posta:</label>
-
-            <input type="email" id="email" name="email" required>
-
-            <label for="musicLink">MÜZİK LİNKİ
-              (Spotify, YouTube vb.):</label>
-
-            <input type="url" id="musicLink" name="musicLink" required>
-
-            <label for="genre">MÜZİK TÜRÜ:</label>
-
-            <input type="text" id="genre" name="genre" required>
-
-            <label for="description">KENDİNİZİ TANITIN:</label>
-
-            <textarea id="description" name="description" rows="4" required></textarea>
-
-            <button type="submit">Başvuruyu Gönder</button>
-
-        </form>
-
-    </section><section class="platform-logos">
-
-        <h2>Müzik Dağıtımı Yapılan Platformlar +120</h2>
-
-        <div class="logos">
-
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify">
-
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/TikTok_logo.svg" alt="TikTok">
-
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
-
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Deezer_Logo_2019.png" alt="Deezer">
-
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Amazon_Music_logo.svg" alt="Amazon Music">
-
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Apple_Music_Logo.svg" alt="Apple Music">
-
-        </div>
-
-    </section>
+    </main>
 
     <footer>
 
-        <nav>
-         <a href="#">Ana Sayfa</a>
+        <div class="footer-content">
 
-            <a href="#">Hesap</a>
+      <p>© 2024 SHANZY MUSIC ENTERTAINMENT</p>
 
-            <a href="#">Sepet</a>
-
-            <a href="#">Arama</a>
-
-        </nav>
-
-    </footer>
-
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Apple_Music_Logo.svg" alt="Apple Music">
+      <p class="footer-subtext">Tüm hakları saklıdır.</p>
 
         </div>
-
-    </section>
-
-    <footer>
-
-        <nav>
-
-            <a href="#">Ana Sayfa</a>
-
-            <a href="#">Hesap</a>
-
-            <a href="#">Sepet</a>
-
-            <a href="#">Arama</a>
-
-        </nav>
 
     </footer>
 
@@ -226,8 +193,7 @@
 </body>
 
 </html>
-    <script src="script.js"></script>
-
+<!-- partial -->
+  
 </body>
-
 </html>
