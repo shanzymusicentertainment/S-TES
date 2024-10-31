@@ -1,10 +1,4 @@
-/* Genel Ayarlar */
-
 * {
-
-    margin: 0;
-
-    padding: 0;
 
     box-sizing: border-box;
 
@@ -12,280 +6,194 @@
 
 body {
 
-    font-family: "San Francisco", Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 
-    color: #fff;
+    margin: 0;
 
-    background-color: #0c0c0c;
+    padding: 0;
 
-    display: flex;
+    background-color: #000000; /* AMOLED siyah arka plan rengi */
 
-    flex-direction: column;
-
-    align-items: center;
-
-    text-align: center;
+    color: #ffffff; /* Beyaz yazı rengi */
 
 }
 
 header {
 
-    padding: 20px;
+    background: #000; /* Siyah arka plan */
+
+    box-shadow: 0 0 20px rgba(128, 0, 128, 0.7); /* Mor LED efekti */
 
 }
 
-h1 {
+.header-background {
 
-    font-size: 24px;
+    padding: 20px 0;
 
-    color: #b45fff;
-
-    margin-bottom: 15px;
+    text-align: center;
 
 }
 
-.info-button {
+header nav ul {
 
-    background-color: #b45fff;
+    list-style: none;
+
+    padding: 0;
+
+}
+
+header nav ul li {
+
+    display: inline;
+
+    margin: 0 15px;
+
+}
+
+header nav a {
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+#hero {
+
+    background: url('https://your-image-url.com/hero-image.jpg') no-repeat center center/cover;
 
     color: #fff;
 
-    border: none;
+    padding: 60px 20px;
 
-    padding: 10px 20px;
-
-    cursor: pointer;
-
-    font-size: 16px;
-
-    margin-top: 10px;
+    text-align: center;
 
 }
 
-section.how-it-works {
+.cta-button {
 
-    background-color: #111;
+    display: inline-block;
 
-    padding: 30px;
+    background-color: #007bff; /* Mavi buton */
 
-    width: 100%;
+    color: #ffffff;
 
-    max-width: 600px;
+    padding: 15px 30px;
+
+    text-decoration: none;
+
+    border-radius: 5px;
 
     margin-top: 20px;
 
-}
-
-.how-it-works h2 {
-
-    font-size: 20px;
-
-    color: #b45fff;
-
-    margin-bottom: 20px;
+    transition: background-color 0.3s;
 
 }
 
-.steps {
+.cta-button:hover {
+
+    background-color: #0056b3; /* Koyu mavi hover */
+
+}
+
+main {
+
+    padding: 20px;
+
+    max-width: 800px;
+
+    margin: auto;
+
+}
+
+h2 {
+
+    color: #007bff; /* Mavi başlık rengi */
+
+}
+
+.special-section {
+
+    background: rgba(255, 215, 0, 0.1); /* Hafif sarı arka plan */
+
+    border-radius: 15px; /* Oval köşe */
+
+    padding: 20px;
+
+    margin-bottom: 40px;
+
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); /* Sarı LED efekti */
+
+}
+
+.application-description {
+
+    color: #6c757d; /* Gri başlık rengi */
+
+    font-size: 1.1em; /* Biraz daha büyük yazı */
+
+    text-align: center; /* Ortaya hizala */
+
+    margin-bottom: 20px; /* Altına boşluk ekle */
+
+}
+
+section {
+
+    margin-bottom: 40px;
+
+}
+
+.application-container {
+
+    background-color: #000; /* Siyah arka plan */
+
+    border-radius: 20px; /* Oval köşe */
+
+    padding: 30px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-shadow: 0 0 20px rgba(128, 0, 128, 0.5); /* Mor led efekti */
+
+}
+
+.application-container::before {
+
+    content: '';
+
+    position: absolute;
+
+    top: -10px;
+
+    left: -10px;
+
+    right: -10px;
+
+    bottom: -10px;
+
+    border-radius: 30px; /* Oval köşe */
+
+    background: rgba(128, 0, 128, 0.4); /* Mor led arka plan */
+
+    z-index: -1; /* Alt katmanda görünmesini sağla */
+
+}
+
+form {
 
     display: flex;
 
     flex-direction: column;
 
-    gap: 15px;
-
 }
 
-.step {
+label {
 
-    background-color: #222;
+    margin-bottom: 5px;
 
-    padding: 20px;
-
-    border-radius: 5px;
-
-    display: flex;
-
-    align-items: center;
-
-}
-
-.step span {
-
-    font-size: 18px;
-
-    background-color: #b45fff;
-
-    color: #fff;
-
-    border-radius: 50%;
-
-    width: 50px; /* Çapı artırdım */
-
-    height: 50px; /* Çapı artırdım */
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    margin-right: 15px;
-
-}
-
-/* Başvuru Formu Stilleri */
-
-.application-form {
-
-    background-color: #111;
-
-    padding: 30px;
-
-    width: 100%;
-
-    max-width: 600px;
-
-    margin-top: 20px;
-
-    border-radius: 5px;
-
-}
-
-.application-form h2 {
-
-    color: #b45fff;
-
-    margin-bottom: 15px;
-
-}
-
-.application-form label {
-
-    display: block;
-
-    margin-top: 15px;
-
-    color: #ddd;
-
-}
-
-.application-form input, .application-form textarea {
-
-    width: 100%;
-
-    padding: 10px;
-
-    margin-top: 5px;
-
-    background-color: #222;
-
-    border: 1px solid #444;
-
-    color: #fff;
-
-    border-radius: 5px;
-
-}
-
-.application-form button {
-
-    background-color: #b45fff;
-
-    color: #fff;
-
-    border: none;
-
-    padding: 10px 20px;
-
-    cursor: pointer;
-
-    margin-top: 15px;
-
-    width: 100%;
-
-    border-radius: 5px;
-
-}
-
-/* Platform Logoları */
-
-.platform-logos {
-
-    background-color: #111;
-
-    padding: 30px;
-
-    width: 100%;
-
-    max-width: 600px;
-
-    margin-top: 20px;
-
-    border-radius: 5px;
-
-    text-align: center;
-
-}
-
-.platform-logos h2 {
-
-    color: #b45fff;
-
-    margin-bottom: 20px;
-
-}
-
-.platform-logos .logos {
-
-    display: flex;
-
-    flex-wrap: wrap;
-
-    justify-content: center;
-
-    gap: 20px;
-
-}
-
-.platform-logos img {
-
-    width: 60px;
-
-    height: auto;
-
-    transition: transform 0.3s ease;
-
-}
-
-.platform-logos img:hover {
-
-    transform: scale(1.1);
-
-}
-
-footer {
-
-    margin-top: 20px;
-
-    background-color: #222;
-
-    padding: 10px;
-
-    width: 100%;
-
-    text-align: center;
-
-}
-
-footer nav a {
-
-    color: #fff;
-
-    margin: 0 10px;
-
-    text-decoration: none;
-
-    font-size: 14px;
-
-}
+    font-weight: bold; /* Kalın yazı */
