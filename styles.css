@@ -1,0 +1,291 @@
+/* Genel Ayarlar */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: "San Francisco", Arial, sans-serif;
+
+    color: #fff;
+
+    background-color: #0c0c0c;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+header {
+
+    padding: 20px;
+
+}
+
+h1 {
+
+    font-size: 24px;
+
+    color: #b45fff;
+
+    margin-bottom: 15px;
+
+}
+
+.info-button {
+
+    background-color: #b45fff;
+
+    color: #fff;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    margin-top: 10px;
+
+}
+
+section.how-it-works {
+
+    background-color: #111;
+
+    padding: 30px;
+
+    width: 100%;
+
+    max-width: 600px;
+
+    margin-top: 20px;
+
+}
+
+.how-it-works h2 {
+
+    font-size: 20px;
+
+    color: #b45fff;
+
+    margin-bottom: 20px;
+
+}
+
+.steps {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+.step {
+
+    background-color: #222;
+
+    padding: 20px;
+
+    border-radius: 5px;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+.step span {
+
+    font-size: 18px;
+
+    background-color: #b45fff;
+
+    color: #fff;
+
+    border-radius: 50%;
+
+    width: 50px; /* Çapı artırdım */
+
+    height: 50px; /* Çapı artırdım */
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-right: 15px;
+
+}
+
+/* Başvuru Formu Stilleri */
+
+.application-form {
+
+    background-color: #111;
+
+    padding: 30px;
+
+    width: 100%;
+
+    max-width: 600px;
+
+    margin-top: 20px;
+
+    border-radius: 5px;
+
+}
+
+.application-form h2 {
+
+    color: #b45fff;
+
+    margin-bottom: 15px;
+
+}
+
+.application-form label {
+
+    display: block;
+
+    margin-top: 15px;
+
+    color: #ddd;
+
+}
+
+.application-form input, .application-form textarea {
+
+    width: 100%;
+
+    padding: 10px;
+
+    margin-top: 5px;
+
+    background-color: #222;
+
+    border: 1px solid #444;
+
+    color: #fff;
+
+    border-radius: 5px;
+
+}
+
+.application-form button {
+
+    background-color: #b45fff;
+
+    color: #fff;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    cursor: pointer;
+
+    margin-top: 15px;
+
+    width: 100%;
+
+    border-radius: 5px;
+
+}
+
+/* Platform Logoları */
+
+.platform-logos {
+
+    background-color: #111;
+
+    padding: 30px;
+
+    width: 100%;
+
+    max-width: 600px;
+
+    margin-top: 20px;
+
+    border-radius: 5px;
+
+    text-align: center;
+
+}
+
+.platform-logos h2 {
+
+    color: #b45fff;
+
+    margin-bottom: 20px;
+
+}
+
+.platform-logos .logos {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 20px;
+
+}
+
+.platform-logos img {
+
+    width: 60px;
+
+    height: auto;
+
+    transition: transform 0.3s ease;
+
+}
+
+.platform-logos img:hover {
+
+    transform: scale(1.1);
+
+}
+
+footer {
+
+    margin-top: 20px;
+
+    background-color: #222;
+
+    padding: 10px;
+
+    width: 100%;
+
+    text-align: center;
+
+}
+
+footer nav a {
+
+    color: #fff;
+
+    margin: 0 10px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+}
